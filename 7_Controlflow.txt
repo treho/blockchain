@@ -1,0 +1,14 @@
+pragma solidity 0.7.5;
+
+contract Controlflow {
+    function check(int number) public pure returns (string memory) {
+        if(number > 10) {
+            return "This number is bigger than 10";
+        }
+
+        else {
+            return "This number is not bigger than 10";
+        }
+    
+    }
+}

@@ -1,0 +1,14 @@
+pragma solidity 0.7.5;
+
+contract Constructorexample {
+
+    string fixedMessage; // state variable
+
+    constructor(string memory _fixedMessage) {
+        fixedMessage = _fixedMessage;
+    }
+
+    function hello() public returns (string memory) {
+        return fixedMessage;
+    }
+}

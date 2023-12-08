@@ -1,0 +1,20 @@
+pragma solidity 0.7.5;
+
+contract Loops {
+
+    function addTenForLoop (int number) public pure returns (int) {
+        for (int i = 0; i<10; i++) {
+            number++;
+        }
+        return number;
+    }
+
+    function addTenWhileLoop (int number) public pure returns (int) {
+        int i = 0;
+        while (i < 10) {
+            number++;
+            i++;
+        }
+        return number;
+    }
+}

@@ -1,0 +1,7 @@
+pragma solidity 0.7.5;
+
+contract Predefined {
+    function whoIsThesender() public view returns (address) { 
+        return msg.sender;
+    }
+}

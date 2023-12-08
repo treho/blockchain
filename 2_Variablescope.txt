@@ -1,0 +1,10 @@
+pragma solidity 0.7.5;
+
+contract Variablescope {
+
+    string greeting = "Hi There";
+    
+    function hello() public returns (string memory) {
+    return greeting;
+    }
+}
